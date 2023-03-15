@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Orang Cantik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Mycss -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color : pink">
+    <div class="card mb-3 mt-3" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+        <h5 style="color : pink;">Ini mah aku tau orangnya atuh🤔</h5>
+        <div class="mt-1 mb-3">
+            <button class="btn btn-borderless text-light" id="btn2" style="background-color : pink; width : 50%;"><b>
+                    siapa cik</b>😝</button>
+        </div>
+    </div>
+
+    <div id="response2">
+
+    </div>
+
+    <!-- My Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- My AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        });
+
+    </script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // saat a href diklik maka 
+            $('#btn2').click(function () {
+                // lalu konten akan diisi halaman yang sesuai dengan pilihan
+                $('#response2').load('response2.html');
+                return false;
+            });
+        });
+
+    </script>
+
+    <!-- My GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from(".ketiga", {
+            delay : 5000
+        });
+    </script> -->

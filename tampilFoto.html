@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Orang Cantik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Mycss -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color : pink height : 100vh;">
+  <div class="d-flex flex-column" style=" width : 30%;">
+    <div class="card" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="1000" style="">
+      <h4 style="color : pink;">Oh ini yang lagi ultah teh?😅</h4>
+      <div class="mt-1 mb-3">
+        <button class="btn btn-borderless text-light" id="btn1" style="background-color : pink; width : 50%;"
+          name="chat1"><b> iyaa hihi😊</b></button>
+      </div>
+    </div>
+    <div id="response1"></div>
+    <div class="ketiga" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000"
+      style=" border-radius : 100px; display: none;">
+      <h4 style="color : white;">Hayoo kamu bisa tebak ga ini siapa?</h4>
+    </div>
+  </div>
+  <div data-aos="fade-up" data-aos-duration="1000" style=" width : 60%;">
+
+    <img src="asset/profile.png" style="height : 700px;" id="popUpFoto">
+
+  </div>
+  <div class="d-flex flex-column">
+    <div class="card text-light mb-3" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="1000">
+      <h4 style="color: pink;">doa dan pesan dari sang pacar📣</h4>
+      <center>
+        <button class="btn btn-borderless text-light mb-3" id="btn2" style="background-color : pink; width : 50%;"
+          name="chat1"><b>klik aku❤</b></button>
+      </center>
+    </div>
+
+    <div id="doaPesan"></div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" style="color: pink" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Doa untukmu (Kesehatan)🤸</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: left;">
+          <p>
+            Doa terbaik buat ayang cinta dalam hidupku adalah semoga sehat dan bugar selalu, juga terhindar dari segala
+            macam penyakit yang membahayakan dan kejadian yang membahayakan kesehatan ayang. sehingga ayang bisa
+            menjalani aktivitas sehari-hari dengan lancar tanpa ada kendala kesehatan. aku punya harapan buat ayang, aku
+            mau kedepannya ayang harus lebih bertanggung jawab atas memperhatikan kesehatan ayang dengan menjaga pola
+            makan, aku ga suka ya kalo ayang menunda nunda makan, makan tuh kebutuhan by dan harus sesuai sama waktu nya
+            jangan telat makan terus😒!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" style="color: pink" id="keluarga" tabindex="-1" aria-labelledby="keluargaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="keluargaLabel">Doa untukmu (Keluarga)👩‍👧</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: left;">
+          <p>
+            Doa terbaik buat keluarga ayang juga semoga keluarga ayang selalu dalam lindungan Allah SWT dan diberikan
+            kesehatan serta kebahagiaan yang berlimpah. Aku tahu betapa sulitnya menghadapi bertambahnya umur tanpa se
+            sosok ayah, aku juga tau betapa sulitnya kehilangan seorang ayah yang sangat dicintai, namun ingatlah bahwa
+            ayah ayang selalu hidup dalam hati ayang dan kenangan ayang. Walaupun ayah ayang sudah tiada, namun dia akan
+            selalu menjadi bagian dari kehidupan ayang dan pengaruhnya akan terus terasa dalam setiap langkah ayang.
+            Jangan biarkan kesedihan menghambat langkah ayang buat maju, teruslah berusaha dan berdoa agar ayang dan
+            keluarga ayang selalu diberikan kesehatan yang berlimpah oleh Allah SWT🤗.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" style="color: pink" id="pesan" tabindex="-1" aria-labelledby="pesanLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pesanLabel">Pesan pesan untukmu📜</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: left;">
+          <p>
+            happy level up sayangku🎂!! jadi pribadi yang lebih baik lagi, be ur self yahh, cantik itu relatif tapi yang
+            cantik luar dalam kayak kamu itu yang luar biasa, kurangin insecure perbanyak bersyukur, perbanyak berdoa,
+            ibadah, sama deket dengan Tuhan, jangan nyimpen dendam sama orang lain, jangan iri sama orng lain, kenalin
+            potensi diri kamu, dan kembangkan itu, kamu adah sampai saat ini juga udah pencapaian yang luar biasa, ur
+            enough caduut! setiap orang itu ada kekurangan dan kelebihan nya masing2 yang perlu kamu ingat kamu berharga
+            kalau ada omongan orang lain yang nyakitin kamu, jangan di simpan lama2 ya, kalau ada problem cari jalan
+            kluar terbaik, nangis boleh, ngerasa cape boleh tapi jangan nyerah, ambil jeda, renungi, dan liat maksudnya
+            Tuhan dan inget selelu ada aku yang siap buat dengerin dan nemenin kamu buat nyelesain masalah apapun, ambil
+            pelajaran nya dan kelarin dgn baik2, jangan ngelakuin hal2 yang merugikan diri sendiri, kuliah yang bener
+            ya, ngerjain tugas jangan lupa, tingkatin kontrol diri kamu, jangan gegabah kalau mau ngambil keputusan,
+            Tuhan sayang sama kamu jadi jangan berpikir kamu sendirian, banyak orang2 yang stay sama kamu contohnya aku,
+            bangun hubungan sama keluarga, teman dan kerabat biar makin dekat, okei?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" style="color: pink" id="kue" tabindex="-1" aria-labelledby="kueLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="kueLabel">Kue ulang tahun buat ayang🎂</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: left;">
+          <img src="asset/kueUltah.gif" alt="" style="width: 470px;">
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+  <!-- My Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- My AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    });
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn1").click(function () {
+        $("#response1").load('response1.html');
+        return false;
+      });
+      $('#btn2').click(function () {
+        $("#doaPesan").load('doaPesan.html');
+        return false;
+      })
+    });
